@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+$body-bg: #eee;
+$font-family-sans-serif: 'Lato', 'Helvetica Neue';
+$navbar-height: 45px;
+$navbar-default-bg: #fff;
+$navbar-default-brand-color: #c0392b;
+$brand-primary: #c0392b;
+$jumbotron-bg: #fff;
+
+@import "bootstrap";
+
+.navbar-brand{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
