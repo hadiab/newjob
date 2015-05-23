@@ -9,9 +9,14 @@ $navbar-default-brand-color: #c0392b;
 $brand-primary: #c0392b;
 $jumbotron-bg: #fff;
 
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 .navbar-brand{
   font-family: 'Lobster', cursive;
   font-size: 25px;
+}
+
+a:hover{
+  text-decoration: none;
 }
