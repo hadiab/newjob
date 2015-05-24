@@ -1,28 +1,35 @@
 <div class="row">
 
-  <div class="col-md-8">
+    <div class="col-md-8">
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <%= link_to root_path do %>
+                  <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Back
+                <% end %>
+            </div>
+        </div>
 
         <div class="thumbnail panel panel-default">
 
-            <%= image_tag @pin.image.url(:large) %>
+            <%= image_tag @pin.image.url %>
 
-            <hr>
             <div class="panel-body">
                 <p><%= @pin.description %></p>
                 <b><%= @pin.user.email %></b>
-                <hr>
-                <% if @pin.user == current_user %>
-                    <%= link_to edit_pin_path(@pin) do %>
-                      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
-                    <% end %>
-                <% end %>
-
-
             </div>
+
+            <% if @pin.user == current_user %>
+                <div class="panel-footer">
+                    <%= link_to edit_pin_path(@pin) do %>
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                    <% end %>
+                </div>
+            <% end %>
 
         </div>
 
-  </div>
+    </div>
 
   <div class="col-md-4">
 

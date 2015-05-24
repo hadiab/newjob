@@ -17,6 +17,14 @@ $jumbotron-bg: #fff;
   font-size: 25px;
 }
 
-a:hover{
+a:hover, a:active, a:visited{
   text-decoration: none;
+}
+
+.panel-heading{
+  background-color: #fff;
+}
+
+.panel-footer{
+  background-color: #fff;
 }
